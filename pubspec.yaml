@@ -38,6 +38,7 @@ dependencies:
   drift_flutter: ^0.2.8
   path_provider: ^2.1.5
   shared_preferences: ^2.5.4
+  intl: ^0.20.2
 
 
 dev_dependencies:
@@ -67,7 +68,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/assets/note_pisture.png
+    - assets/note_picture.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

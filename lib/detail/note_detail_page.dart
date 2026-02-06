@@ -77,13 +77,21 @@ class _NoteDetailViewState extends State<_NoteDetailView> {
               fontWeight: FontWeight.bold,
             ),
           ),
+          bottom: PreferredSize(
+            preferredSize: const Size.fromHeight(1.0),
+            child: Divider(
+              height: 1.0,
+              thickness: 1.0,
+              color: const Color.fromARGB(255, 0, 0, 0),
+            ),
+          ),
         ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Image(image: AssetImage('images/assets/note_pisture.png')),
+              Image(image: AssetImage('assets/note_picture.png')),
               Text(
                 'Название',
                 style: TextStyle(

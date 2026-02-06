@@ -14,11 +14,23 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           "Заметки",
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+            fontSize: 28,
+          ),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
-        centerTitle: true,
+        centerTitle: false,
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(1.0),
+          child: Divider(
+            height: 1.0,
+            thickness: 1.0,
+            color: const Color.fromARGB(255, 0, 0, 0),
+          ),
+        ),
       ),
       body: BlocBuilder<HomeCubit, HomeState>(
         builder: (context, state) {
@@ -41,9 +53,7 @@ class HomePage extends StatelessWidget {
                   ),
                   margin: const EdgeInsets.only(bottom: 12),
                   child: InkWell(
-                    borderRadius: BorderRadius.circular(
-                      16,
-                    ),
+                    borderRadius: BorderRadius.circular(16),
                     onTap: () {
                       Navigator.push(
                         context,
